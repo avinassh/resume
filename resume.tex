@@ -1,0 +1,120 @@
+%% start of file `resume.tex'.
+%% Copyright 2014 Avinash (avinashsajjanshetty@gmail.com).
+% Experience
+% Tech Skills
+% Education
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{fontawesome}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Avinash}
+\familyname{Sajjanshetty}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{IIIT-Hyderabad}{Gachibowli, Hyderabad - 500032}{India}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\mobile{+91-801-951-1996}                          % optional, remove / comment the line if not wanted
+%\phone{+2~(345)~678~901}                           % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                             % optional, remove / comment the line if not wanted
+\email{avinashsajjanshetty@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\faGithub \href{https://github.com/avinassh}{avinassh}} 
+\quote{'If Avinash walked into your office searching for a job, hire him ASAP!' - Former Technical Manager}                                 % optional, remove / comment the line if not wanted
+
+\begin{document}
+
+\makecvtitle
+
+% \section{Personal Strength}
+% \cvlistitem{Can work effectively in a team}
+% \cvlistitem{Target achiever and dedication towards the work}
+% \cvlistitem{Obey morals and values}
+% \cvlistitem{Positive attitude and Leadership quality}
+% \cvlistitem{A keen learner and a good Listener}
+
+%\section{Objective}
+Software developer with 1 year experience of writing clean, idiomatic code. Self-motivated and able to employ diverse technical skills to diligently complete work assignments.
+
+\section{Experience}
+\cventry{Jun 2013 -- March 2014}{Project engineer}{VLEAD}{Hyderabad}{}{Virtual Labs Engineering and Architecture Division (VLEAD), based in IIIT-Hyderabad, is one of the several teams working on the Govt. of India funded ’Virtual Labs’ project. The project’s goal is to build labs in engineering and sciences providing real lab experience to all students with as minimum requirements as a computer system and an internet connection.\newline{}
+\textbf{Major works}:%
+\begin{itemize}%
+\item \href{https://github.com/vlead/ovpl}{OVPL} - One VM Per Lab is a system which enables developers one click deployment of their Virtual Labs. I was one of the four contributors, worked on writing servers using Tornado and I improved system performance by 40\%. The project is opensource and can be found \href{https://github.com/vlead/ovpl}{here}.
+\item {UIR} - UIR is a responsive UI framework for Virtual Labs. It is written mostly using CSS3 and bit of LESS. I conceived of, designed and created the UI and framework, which led to 67\% increase in site traffic and 92\% increase in performance.
+\item \href{https://github.com/vlead/simo}{SIMO} - SIMO (Seamless Integration of MirrOring and syncing) is bot which enables syncing of Bazaar, Git and SVN repositories to a remote Git server, without actually converting repositories of different version control to Git. The project is opensource and can be found \href{https://github.com/vlead/simo}{here}.
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+\end{itemize}}
+
+
+\section{Technical Skills}
+\cvcomputer
+{\textbf{Programming languages}}{Python, C, C++, \LaTeX}
+{\textbf{Operating systems}}{Linux, OS X, Windows}
+\cvcomputer
+{\textbf{DBMS}}{MongoDB, MySQL}
+{\textbf{Web}}{HTML, CSS, Javascript}
+\cvcomputer
+{\textbf{Frameworks}}{Tornado, Flask, Bootstrap, Pure}
+{\textbf{Tools}}{GIMP, TeXWorks, Emacs, Version Control (Git, Bazaar, SVN)}
+{}
+
+\section{Education}
+\cventry{}{Bachelors of Engineering(CS\&E)}{PDA College of Engineering}{VTU University}{CGPA-9.15}{}
+
+
+\section{Extras}
+\cvlistitem{Actively participating in an open source project which helps people maintain their products wishlist, supporting multiple Indian e-commerce sites. }
+% \cvlistitem{Qualified GATE-2013 with 93 percentile}
+% \cvlistitem{Won first prize for final year project in TechnoFest, an annual fest organised by college} 
+\clearpage
+
+\end{document}
+%% end of file `template.tex'.
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
